@@ -1,0 +1,21 @@
+async function loadDynasty( {
+  const res = await fetch("/dynasty");
+  const data = await res.json();
+
+  const container = document.getElementById("houses");
+  container.innerHTML = "";
+
+  data.forEach(h => {
+    const div = document.createElement("div");
+    div.className = "house";
+    div.innerHTML = `
+      <h2>${h.name}</h2>
+      <p><strong>Title:</strong> ${h.title}</p>
+      <p><strong>Region:</strong> ${h.region}</p>
+      <p><strong>Status:</strong> ${h.status}</p>
+    `;
+    container.appendChild(div);
+  });
+}
+
+loadDynasty();

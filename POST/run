@@ -1,0 +1,7 @@
+{
+  "t": 1,
+  "msg": "test",
+  "type": "oracle",
+  "input": "hello dynasty",
+  "ctx": {}
+}

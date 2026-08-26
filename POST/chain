@@ -1,0 +1,4 @@
+[
+  {"t": 1, "msg": "step1", "type": "halo", "input": "first", "ctx": {}},
+  {"t": 2, "msg": "step2", "type": "loom", "input": "second", "ctx": {}}
+]
